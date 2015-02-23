@@ -1,5 +1,5 @@
 # Change the clang install dir here, and in all occurrences in CustomClang.xcplugin/Contents/Resources/Custom Clang.xcspec
-CLANG_BASE_DIR := /usr/local/clang
+CLANG_BASE_DIR := /usr/local/Cellar/llvm/3.5.1
 
 all:
 	@[ -e $(CLANG_BASE_DIR)/bin/clang ] || ( echo "Expected a clang install in $(CLANG_BASE_DIR)!"; false; )
